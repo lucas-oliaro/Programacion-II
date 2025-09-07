@@ -86,12 +86,15 @@ class NYPizzaIngredientFactory(PizzaIngredientFactory):
     def create_clam(self) -> Clams:   return Clams("Fresh Clams")
     def create_onion(self) : return Onion("Garlic")
     def create_mushroom(self): return Mushroom("Mushrooms")
+    def create_sliced_pepperoni(self): return SlicedPepperoni("Sliced Pepperoni")
+    def create_ham(self): return Ham("Ham")
     
 class ChicagoPizzaIngredientFactory(PizzaIngredientFactory):
     def create_dough(self) -> Dough:  return Dough("Thick Crust Dough")
     def create_sauce(self) -> Sauce:  return Sauce("Plum Tomato Sauce")
     def create_cheese(self) -> Cheese:return Cheese("Mozzarella Cheese")
     def create_clam(self) -> Clams:   return Clams("Frozen Clams")
-    def create_pepperoni(self): return SlicedPepperoni("Sliced Pepperoni")
+    def create_sliced_pepperoni(self): return SlicedPepperoni("Sliced Pepperoni")
     def create_ham(self): return Ham("Ham")
-    
+    def create_onion(self) : return Onion("Garlic")
+    def create_mushroom(self): return Mushroom("Mushrooms")
