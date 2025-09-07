@@ -1,10 +1,7 @@
 from TP_3.abstract_factory.store import PizzaStore, NYPizzaStore, ChicagoPizzaStore
+from TP_3.abstract_factory.ingredients import Dough, NYPizzaStore, ChicagoPizzaStore
 
-def main():
-    print("This is a test module for pizzas.")
-    # Abstract Factory Pattern
-    print("NEw test for branch")
-
-
-if __name__ == "__main__":
-    main()
+def test_ny_cheese_pizza_has_correct_dough():
+    store = NYPizzaStore()
+    pizza = store.order_pizza("cheese")
+    assert isinstance(pizza.dough, Dough)
